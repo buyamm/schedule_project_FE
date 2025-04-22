@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dff0d8;
+    padding: 30px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #3c763d;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+  
+  input[type="text"], textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    box-sizing: border-box;
+  }
+  
+  ul#suggestionBox {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: calc(100% - 60px);
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 10;
+  }
+  
+  ul#suggestionBox li {
+    padding: 12px;
+    cursor: pointer;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  ul#suggestionBox li:hover {
+    background: #f0f0f0;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  th {
+    background-color: #dff0d8;
+    color: #3c763d;
+  }
+  
+  .note {
+    margin-top: 20px;
+  }
+  
+  .note textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .submit-btn {
+    display: block;
+    margin: 30px auto 0;
+    background: linear-gradient(to right, #5c9f40, #2a3f54);
+    color: white;
+    border: none;
+    padding: 16px 50px;
+    font-size: 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #2a3f54, #5c9f40);
+  }
+  
+  .toggle-btn {
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    height: 40px;
+  }
+  
+  .want {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .none {
+    background-color: #e0e0e0;
+    color: #555;
+  }
