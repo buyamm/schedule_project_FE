@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/SubjectSelector.css';
+import Footer from './Footer';
 
 function SubjectSelector() {
   const [count, setCount] = useState(0);
@@ -28,7 +29,8 @@ function SubjectSelector() {
 
     const payload = { query };
 
-    fetch('http://127.0.0.1:5000/api/search-recommend', {
+    // ('http://127.0.0.1:8001/api/search-recommend'
+    fetch('http://20.29.23.53:8001/api/search-recommend', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -108,7 +110,15 @@ function SubjectSelector() {
   };
 
   return (
+    <>
     <div className="container">
+      <img 
+        src="/logo_title_of_VKU.png" 
+        alt="Logo VKU" 
+        style={{ display: 'block', margin: '0 auto 20px', maxWidth: 'inherit' }} 
+      />
+
+
       <h2>HÃY CHO CHÚNG TÔI BIẾT:</h2>
 
       <label htmlFor="subject">Môn Học</label>
@@ -180,7 +190,15 @@ function SubjectSelector() {
       </div>
 
       <button className="submit-btn" onClick={submitForm}>Hãy lập tkb cho tôi</button>
+
+      
+      
     </div>
+    <Footer />
+    </>
+    
+
+    
   );
 }
 

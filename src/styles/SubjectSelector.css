@@ -1,17 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #dff0d8;
-    padding: 30px;
+    padding: 0!important;
+  }
+
+  #root{
+    height: 100vh; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column;
   }
   
   .container {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 30px auto;
     background: white;
     border-radius: 10px;
     padding: 30px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     position: relative;
+    flex: 1;
   }
   
   h2 {
@@ -121,4 +129,13 @@ body {
   .none {
     background-color: #e0e0e0;
     color: #555;
+  }
+
+  footer{
+    background-color: #ffcc00;
+    padding: 10px;
+    margin-top: 30px; 
+    font-size: 14px;
+    border-top: 5px solid red;
+    text-align: center;
   }
